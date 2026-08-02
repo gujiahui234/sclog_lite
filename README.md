@@ -7,7 +7,7 @@
 
 ## 环境要求
 
-- Python 3.13 或更高版本
+- Python 3.12 或更高版本
 - MySQL 5.7+/8.x
 - `loguru`
 - `pymysql`
@@ -132,7 +132,7 @@ shutdown(timeout=10.0)
 
 ```bash
 pytest
-sphinx-build -W -b html docs docs/_build/html
+sphinx-build -W -b html docs/source docs/build/html
 python -m build
 ```
 

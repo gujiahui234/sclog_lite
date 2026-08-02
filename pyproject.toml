@@ -4,10 +4,10 @@ build-backend = "hatchling.build"
 
 [project]
 name = "sclog-lite"
-version = "0.1.0"
+version = "0.2.0"
 description = "A Loguru extension that writes logs to console, files, and MySQL."
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 license = "MIT"
 authors = [
   { name = "sclog_lite contributors" },
@@ -19,6 +19,7 @@ classifiers = [
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
   "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
   "Topic :: System :: Logging",
   "Typing :: Typed",
@@ -37,6 +38,7 @@ docs = [
   "furo>=2024.8.6",
   "sphinx>=8.2",
   "sphinx-autodoc-typehints>=3",
+  "sphinx-copybutton>=0.5.2",
 ]
 dev = [
   "build>=1.2",
@@ -87,7 +89,7 @@ skip_covered = true
 fail_under = 80
 
 [tool.ruff]
-target-version = "py313"
+target-version = "py312"
 line-length = 100
 src = ["src", "tests"]
 
@@ -96,7 +98,7 @@ select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
 ignore = ["E501"]
 
 [tool.mypy]
-python_version = "3.13"
+python_version = "3.12"
 strict = true
 packages = ["sclog_lite"]
 mypy_path = "src"

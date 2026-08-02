@@ -13,7 +13,7 @@ from .mysql_writer import WriterStats
 try:
     __version__ = version("sclog-lite")
 except PackageNotFoundError:
-    __version__ = "0.1.0"
+    __version__ = "0.2.0"
 
 configure = setup_logger
 
